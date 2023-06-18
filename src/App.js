@@ -1,9 +1,16 @@
+import { Route, Routes } from "react-router";
 import "./App.css";
+
+import { Home } from "./pages/Home";
+import { Archive } from "./pages/Archive";
 
 function App() {
     return (
         <div className="App">
-            <h1>Hello World</h1>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/archive" element={<Archive />} />
+            </Routes>
         </div>
     );
 }
