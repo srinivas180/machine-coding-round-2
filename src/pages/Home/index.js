@@ -78,9 +78,10 @@ export function Home() {
                     <h2 className="modal__title">
                         {isEdit ? "Edit" : "Create"} Habit
                     </h2>
-                    <div>
+                    <div className="modal__header">
                         <label htmlFor="modal-name">Name</label>
                         <input
+                            className="name-input"
                             type="text"
                             id="modal-name"
                             name="modal__name"
@@ -93,7 +94,7 @@ export function Home() {
                             value={newHabit.name}
                         />
                     </div>
-                    <div>
+                    <div className="modal__options">
                         <div>
                             <p>Repeat</p>
                             <select
@@ -157,11 +158,15 @@ export function Home() {
                             </select>
                         </div>
                     </div>
-                    <div>
-                        <button onClick={() => setShowHabitDialogBox(false)}>
+                    <div className="edit__buttons">
+                        <button
+                            className="button button--secondary"
+                            onClick={() => setShowHabitDialogBox(false)}
+                        >
                             Discard
                         </button>
                         <button
+                            className="button button--primary"
                             onClick={() => {
                                 editHabit(newHabit);
 
@@ -192,7 +197,10 @@ export function Home() {
                     <p>
                         <span>Start Date: </span> {singleHabit.startDate}
                     </p>
-                    <button onClick={() => setShowSingleHabit(false)}>
+                    <button
+                        className="button button--secondary"
+                        onClick={() => setShowSingleHabit(false)}
+                    >
                         Close
                     </button>
                 </div>

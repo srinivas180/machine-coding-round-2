@@ -22,8 +22,9 @@ export function HabitItem({
             >
                 {habit.name}
             </button>
-            <div>
+            <div className="habits__buttons">
                 <button
+                    className="button button--secondary habit__button"
                     onClick={() => {
                         setShowHabitDialogBox(true);
                         setNewHabit(habit);
@@ -32,8 +33,18 @@ export function HabitItem({
                 >
                     Edit
                 </button>
-                <button onClick={() => archiveHabit(habit)}>Archive</button>
-                <button onClick={() => deleteHabit(habit)}>Delete</button>
+                <button
+                    className="button button--secondary habit__button"
+                    onClick={() => archiveHabit(habit)}
+                >
+                    Archive
+                </button>
+                <button
+                    className="button button--danger habit__button"
+                    onClick={() => deleteHabit(habit)}
+                >
+                    Delete
+                </button>
             </div>
         </div>
     );

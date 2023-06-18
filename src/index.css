@@ -17,6 +17,44 @@ code {
     --secondary: #c9ffed;
 }
 
+.button {
+    background-color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button--primary {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.button--primary:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.button--secondary {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.button--secondary:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.button--danger {
+    border: 1px solid red;
+    color: red;
+}
+
+.button--danger:hover {
+    background-color: red;
+    color: white;
+}
+
 .link {
     border: none;
     background-color: white;

@@ -36,6 +36,17 @@
     height: fit-content;
 }
 
+.habits__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.habit__button {
+    flex-grow: 1;
+}
+
 .modal {
     border: 1px solid black;
     position: fixed;
@@ -58,4 +69,28 @@
     border-radius: 12px;
     height: fit-content;
     background-color: white;
+}
+
+.modal__header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.name-input {
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid;
+}
+
+.modal__options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.edit__buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
 }
