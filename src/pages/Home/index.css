@@ -84,9 +84,26 @@
 }
 
 .modal__options {
+    margin: 18px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.modal__label {
+    margin: 0;
+}
+
+.modal__option {
+    display: flex;
+    flex-direction: column;
     gap: 12px;
+}
+
+.modal__select {
+    padding: 5px;
+    border-radius: 12px;
+    width: fit-content;
 }
 
 .edit__buttons {

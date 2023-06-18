@@ -95,9 +95,10 @@ export function Home() {
                         />
                     </div>
                     <div className="modal__options">
-                        <div>
-                            <p>Repeat</p>
+                        <div className="modal__option">
+                            <p className="modal__label">Repeat</p>
                             <select
+                                className="modal__select"
                                 onChange={(event) => {
                                     setNewHabit((habit) => ({
                                         ...habit,
@@ -110,9 +111,10 @@ export function Home() {
                                 <option value="Weekly">Weekly</option>
                             </select>
                         </div>
-                        <div>
-                            <p>Goal</p>
+                        <div className="modal__option">
+                            <p className="modal__label">Goal</p>
                             <select
+                                className="modal__select"
                                 onChange={(event) => {
                                     setNewHabit((habit) => ({
                                         ...habit,
@@ -125,9 +127,10 @@ export function Home() {
                                 <option value="2 Times">2 Times</option>
                             </select>
                         </div>
-                        <div>
-                            <p>Time of Day</p>
+                        <div className="modal__option">
+                            <p className="modal__label">Time of Day</p>
                             <select
+                                className="modal__select"
                                 onChange={(event) => {
                                     setNewHabit((habit) => ({
                                         ...habit,
@@ -142,9 +145,10 @@ export function Home() {
                                 <option value="Evening">Evening</option>
                             </select>
                         </div>
-                        <div>
-                            <p>Start Date</p>
+                        <div className="modal__option">
+                            <p className="modal__label">Start Date</p>
                             <select
+                                className="modal__select"
                                 onChange={(event) => {
                                     setNewHabit((habit) => ({
                                         ...habit,
